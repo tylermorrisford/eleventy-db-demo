@@ -12,10 +12,11 @@
     <title>Dancing Bees Apothecary</title>
   </head>
   <body>
-    <header></header>
-    <main>
+    <header>
       <h2>{{ title | default: "Dancing Bees Apothecary" }}</h2>
-      {{ content }}
+      {{ content | safe }}
+    </header>
+    <main>
     </main>
   </body>
 </html>
