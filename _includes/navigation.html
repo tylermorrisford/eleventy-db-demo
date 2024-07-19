@@ -1,6 +1,12 @@
-<span>
-  <strong>Dancing Bees Apothecary</strong>
-  {% for page in collections.page %}
-  <a href="{{ page.url }}">{{ page.data.title }}</a>
-  {% endfor %}
-</span>
+
+  <strong>
+    <a href="/" style="text-decoration: none; color: black">
+      Dancing Bees Apothecary</a
+    >
+  </strong>
+  <div>
+    {% for page in collections.page %}
+    <a href="{{ page.url }}">{{ page.data.title }}</a>
+    {% endfor %}
+  </div>
+
