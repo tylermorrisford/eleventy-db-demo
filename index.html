@@ -2,8 +2,11 @@
 layout: layout.html
 ---
 
-<span>
-  {% for page in collections.page %}
-  <a href="{{ page.url }}">{{ page.data.title }}</a>
-  {% endfor %}
-</span>
+<header>
+  <span>
+    <strong>Dancing Bees Apothecary</strong>
+    {% for page in collections.page %}
+    <a href="{{ page.url }}">{{ page.data.title }}</a>
+    {% endfor %}
+  </span>
+</header>
