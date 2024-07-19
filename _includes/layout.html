@@ -16,18 +16,18 @@
       }
       header {
         padding: 1rem;
-        margin-bottom: 1rem;
         display: inline-block;
       }
       main {
-        padding: 1rem;
+        margin: 0 25%;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h2>{{ title }}</h2>
+    <header>{% include "navigation.html" %}</header>
+    <main>
+      <h3>{{title}}</h3>
       {{ content }}
-    </header>
+    </main>
   </body>
 </html>
