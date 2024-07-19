@@ -4,6 +4,6 @@ layout: layout.html
 
 <span>
   {% for page in collections.page %}
-  <a href="{{ page.url | url }}">{{ page.data.title }}</a>
+  <a href="{{ page.url }}">{{ page.data.title }}</a>
   {% endfor %}
 </span>
