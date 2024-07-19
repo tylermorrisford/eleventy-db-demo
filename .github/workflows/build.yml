@@ -21,10 +21,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install dependencies & build
-        run: |
-          npm ci
-          npm run build
+      - name: Build
+        uses: TartanLlama/actions-eleventy@v1.3
+        with:
+          install_dependencies: true
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
